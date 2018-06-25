@@ -1,0 +1,15 @@
+{
+    "extends": ["standard", "standard-react"],
+    "parser": "babel-eslint",
+    "rules": {
+      "react/prop-types": "off",
+      "spaced-comment": "off",
+      "no-var": "error",
+      "prefer-arrow-callback": "error",
+      "prefer-const": "error",
+      "prefer-template": "error"
+    },
+    "globals": {
+      "alert": true
+    }
+  }

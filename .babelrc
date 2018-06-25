@@ -1,0 +1,14 @@
+{
+    "presets": [
+      "react",
+      "es2015"
+    ],
+    "plugins": [ "babel-plugin-styled-components"],
+    "env": {
+      "test": {
+        "plugins": [
+          ["babel-plugin-webpack-aliases", { "config": "./webpack.common.js" }]
+        ]
+      }
+    }
+  }
