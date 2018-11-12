@@ -1,15 +1,15 @@
 import React from 'react'
+import 'bootstrap'
 import '../stylesheets/index.scss'
-
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
-
-import Header from './components/Header'
-import HomePage from './components/HomePage'
-import NotFound from './components/NotFound'
-import Footer from './components/Footer'
-import configureStore from './store'
 import { Provider } from 'react-redux'
 import { PersistGate } from 'redux-persist/integration/react'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+
+import Header from './components/ui/Header'
+import HomePage from './components/containers/HomePage'
+import NotFound from './components/containers/NotFound'
+import Footer from './components/ui/Footer'
+import configureStore from './store'
 
 const { store, persistor } = configureStore()
 
